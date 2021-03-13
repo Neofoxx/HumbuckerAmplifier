@@ -110,6 +110,24 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Kicad_Library_LOGO
+#
+DEF Kicad_Library_LOGO MARK 0 40 Y Y 1 F N
+F0 "MARK" 0 150 50 H V C CNN
+F1 "Kicad_Library_LOGO" 0 250 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -100 100 100 -100 0 1 0 f
+P 2 0 1 0 -100 0 -50 100 N
+P 2 0 1 0 -50 100 0 50 N
+P 2 0 1 0 0 -100 -100 0 N
+P 2 0 1 0 0 50 50 100 N
+P 2 0 1 0 50 100 100 0 N
+P 2 0 1 0 100 0 0 -100 N
+ENDDRAW
+ENDDEF
+#
 # Mechanical_MountingHole
 #
 DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
