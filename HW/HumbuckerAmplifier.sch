@@ -4,47 +4,47 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Humbucker amplifier"
+Date "2021-03-13"
+Rev "Rev1"
+Comp "Neofoxx"
 Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment2 "Usable through WHOLE battery range without loss of tone"
+Comment3 "Ie. active noise canceling from dual single coil pickups"
+Comment4 "An amplifier for humbuckers"
 $EndDescr
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5F5E746C
-P 2550 5900
-F 0 "H1" H 2650 5946 50  0000 L CNN
-F 1 "MountingHole" H 2650 5855 50  0000 L CNN
-F 2 "MountingHole:MountingHole_6mm" H 2550 5900 50  0001 C CNN
-F 3 "~" H 2550 5900 50  0001 C CNN
-	1    2550 5900
+P 2550 6450
+F 0 "H1" H 2650 6496 50  0000 L CNN
+F 1 "MountingHole" H 2650 6405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_6mm" H 2550 6450 50  0001 C CNN
+F 3 "~" H 2550 6450 50  0001 C CNN
+	1    2550 6450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5F5E75DA
-P 2550 6500
-F 0 "H2" H 2650 6546 50  0000 L CNN
-F 1 "MountingHole" H 2650 6455 50  0000 L CNN
-F 2 "MountingHole:MountingHole_6mm" H 2550 6500 50  0001 C CNN
-F 3 "~" H 2550 6500 50  0001 C CNN
-	1    2550 6500
+P 2550 7050
+F 0 "H2" H 2650 7096 50  0000 L CNN
+F 1 "MountingHole" H 2650 7005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_6mm" H 2550 7050 50  0001 C CNN
+F 3 "~" H 2550 7050 50  0001 C CNN
+	1    2550 7050
 	1    0    0    -1  
 $EndComp
-Text Notes 1100 5700 0    50   ~ 0
+Text Notes 1100 6250 0    50   ~ 0
 Holes for the screws,\nthat screw into the bobbins\nScrews heads are fi = 4mm
 Wire Notes Line
-	850  5400 850  6750
+	850  5950 850  7300
 Wire Notes Line
-	850  6750 3350 6750
+	850  7300 3350 7300
 Wire Notes Line
-	3350 6750 3350 5400
+	3350 7300 3350 5950
 Wire Notes Line
-	3350 5400 850  5400
+	3350 5950 850  5950
 $Comp
 L Amplifier_Operational:TL062 U1
 U 1 1 5F5E866F
@@ -238,12 +238,12 @@ Near op-amp
 $Comp
 L power:GND #PWR0106
 U 1 1 5F601044
-P 1050 1650
-F 0 "#PWR0106" H 1050 1400 50  0001 C CNN
-F 1 "GND" H 1055 1477 50  0000 C CNN
-F 2 "" H 1050 1650 50  0001 C CNN
-F 3 "" H 1050 1650 50  0001 C CNN
-	1    1050 1650
+P 1150 1650
+F 0 "#PWR0106" H 1150 1400 50  0001 C CNN
+F 1 "GND" H 1155 1477 50  0000 C CNN
+F 2 "" H 1150 1650 50  0001 C CNN
+F 3 "" H 1150 1650 50  0001 C CNN
+	1    1150 1650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -280,18 +280,18 @@ Buffered bias supply\n(because reasons)
 $Comp
 L power:GND #PWR0108
 U 1 1 5F627A73
-P 1050 3900
-F 0 "#PWR0108" H 1050 3650 50  0001 C CNN
-F 1 "GND" H 1055 3727 50  0000 C CNN
-F 2 "" H 1050 3900 50  0001 C CNN
-F 3 "" H 1050 3900 50  0001 C CNN
-	1    1050 3900
+P 1150 3900
+F 0 "#PWR0108" H 1150 3650 50  0001 C CNN
+F 1 "GND" H 1155 3727 50  0000 C CNN
+F 2 "" H 1150 3900 50  0001 C CNN
+F 3 "" H 1150 3900 50  0001 C CNN
+	1    1150 3900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1050 3750 1050 3900
-Text Notes 650  2650 0    50   ~ 0
-Both ends of the humbucker,\nand the middle of buckers goes to GND
+	1150 3750 1150 3900
+Text Notes 750  2650 0    50   ~ 0
+Both ends of the humbucker go to J3 and J4\nMiddle of buckers goes to GND (J5)
 $Comp
 L Device:C C3
 U 1 1 5F62ACB8
@@ -450,56 +450,56 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x01 J1
 U 1 1 5F66C1DC
-P 700 1050
-F 0 "J1" H 618 825 50  0000 C CNN
-F 1 "Conn_01x01" H 618 916 50  0000 C CNN
-F 2 "NeofoxxLibs:SolderPad_2x3mm" H 700 1050 50  0001 C CNN
-F 3 "~" H 700 1050 50  0001 C CNN
-	1    700  1050
+P 800 1050
+F 0 "J1" H 718 825 50  0000 C CNN
+F 1 "Conn_01x01" H 718 916 50  0000 C CNN
+F 2 "NeofoxxLibs:SolderPad_2x3mm" H 800 1050 50  0001 C CNN
+F 3 "~" H 800 1050 50  0001 C CNN
+	1    800  1050
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J2
 U 1 1 5F66CB50
-P 700 1400
-F 0 "J2" H 618 1175 50  0000 C CNN
-F 1 "Conn_01x01" H 618 1266 50  0000 C CNN
-F 2 "NeofoxxLibs:SolderPad_2x3mm" H 700 1400 50  0001 C CNN
-F 3 "~" H 700 1400 50  0001 C CNN
-	1    700  1400
+P 800 1400
+F 0 "J2" H 718 1175 50  0000 C CNN
+F 1 "Conn_01x01" H 718 1266 50  0000 C CNN
+F 2 "NeofoxxLibs:SolderPad_2x3mm" H 800 1400 50  0001 C CNN
+F 3 "~" H 800 1400 50  0001 C CNN
+	1    800  1400
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J3
 U 1 1 5F66D022
-P 700 3050
-F 0 "J3" H 618 2825 50  0000 C CNN
-F 1 "Conn_01x01" H 618 2916 50  0000 C CNN
-F 2 "NeofoxxLibs:SolderPad_2x3mm" H 700 3050 50  0001 C CNN
-F 3 "~" H 700 3050 50  0001 C CNN
-	1    700  3050
+P 800 3050
+F 0 "J3" H 718 2825 50  0000 C CNN
+F 1 "Conn_01x01" H 718 2916 50  0000 C CNN
+F 2 "NeofoxxLibs:SolderPad_2x3mm" H 800 3050 50  0001 C CNN
+F 3 "~" H 800 3050 50  0001 C CNN
+	1    800  3050
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J4
 U 1 1 5F66D56E
-P 700 3400
-F 0 "J4" H 618 3175 50  0000 C CNN
-F 1 "Conn_01x01" H 618 3266 50  0000 C CNN
-F 2 "NeofoxxLibs:SolderPad_2x3mm" H 700 3400 50  0001 C CNN
-F 3 "~" H 700 3400 50  0001 C CNN
-	1    700  3400
+P 800 3400
+F 0 "J4" H 718 3175 50  0000 C CNN
+F 1 "Conn_01x01" H 718 3266 50  0000 C CNN
+F 2 "NeofoxxLibs:SolderPad_2x3mm" H 800 3400 50  0001 C CNN
+F 3 "~" H 800 3400 50  0001 C CNN
+	1    800  3400
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J5
 U 1 1 5F66DD6E
-P 700 3750
-F 0 "J5" H 618 3525 50  0000 C CNN
-F 1 "Conn_01x01" H 618 3616 50  0000 C CNN
-F 2 "NeofoxxLibs:SolderPad_2x3mm" H 700 3750 50  0001 C CNN
-F 3 "~" H 700 3750 50  0001 C CNN
-	1    700  3750
+P 800 3750
+F 0 "J5" H 718 3525 50  0000 C CNN
+F 1 "Conn_01x01" H 718 3616 50  0000 C CNN
+F 2 "NeofoxxLibs:SolderPad_2x3mm" H 800 3750 50  0001 C CNN
+F 3 "~" H 800 3750 50  0001 C CNN
+	1    800  3750
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -507,13 +507,13 @@ Wire Wire Line
 Wire Wire Line
 	3300 3050 3300 3250
 Wire Wire Line
-	900  3050 2350 3050
+	1000 3050 2350 3050
 Wire Wire Line
-	900  3400 1450 3400
+	1000 3400 1450 3400
 Wire Wire Line
 	1450 3400 1450 3650
 Wire Wire Line
-	900  3750 1050 3750
+	1000 3750 1150 3750
 $Comp
 L Connector_Generic:Conn_01x01 J6
 U 1 1 5F68E8E7
@@ -537,125 +537,125 @@ F 3 "~" H 6800 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	900  1050 1600 1050
+	1000 1050 1600 1050
 Wire Wire Line
-	900  1400 1050 1400
+	1000 1400 1150 1400
 Wire Wire Line
-	1050 1400 1050 1650
+	1150 1400 1150 1650
 $Comp
 L power:GND #PWR0111
 U 1 1 5F6BA731
-P 4150 6100
-F 0 "#PWR0111" H 4150 5850 50  0001 C CNN
-F 1 "GND" H 4155 5927 50  0000 C CNN
-F 2 "" H 4150 6100 50  0001 C CNN
-F 3 "" H 4150 6100 50  0001 C CNN
-	1    4150 6100
+P 4150 6650
+F 0 "#PWR0111" H 4150 6400 50  0001 C CNN
+F 1 "GND" H 4155 6477 50  0000 C CNN
+F 2 "" H 4150 6650 50  0001 C CNN
+F 3 "" H 4150 6650 50  0001 C CNN
+	1    4150 6650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4150 5950 4150 6100
+	4150 6500 4150 6650
 $Comp
 L Connector_Generic:Conn_01x01 J8
 U 1 1 5F6BA738
-P 3800 5950
-F 0 "J8" H 3718 5725 50  0000 C CNN
-F 1 "Conn_01x01" H 3718 5816 50  0000 C CNN
-F 2 "NeofoxxLibs:SolderPad_2x3mm" H 3800 5950 50  0001 C CNN
-F 3 "~" H 3800 5950 50  0001 C CNN
-	1    3800 5950
+P 3800 6500
+F 0 "J8" H 3718 6275 50  0000 C CNN
+F 1 "Conn_01x01" H 3718 6366 50  0000 C CNN
+F 2 "NeofoxxLibs:SolderPad_2x3mm" H 3800 6500 50  0001 C CNN
+F 3 "~" H 3800 6500 50  0001 C CNN
+	1    3800 6500
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4000 5950 4150 5950
+	4000 6500 4150 6500
 $Comp
 L power:GND #PWR0112
 U 1 1 5F6BCE51
-P 4150 6750
-F 0 "#PWR0112" H 4150 6500 50  0001 C CNN
-F 1 "GND" H 4155 6577 50  0000 C CNN
-F 2 "" H 4150 6750 50  0001 C CNN
-F 3 "" H 4150 6750 50  0001 C CNN
-	1    4150 6750
+P 4150 7300
+F 0 "#PWR0112" H 4150 7050 50  0001 C CNN
+F 1 "GND" H 4155 7127 50  0000 C CNN
+F 2 "" H 4150 7300 50  0001 C CNN
+F 3 "" H 4150 7300 50  0001 C CNN
+	1    4150 7300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4150 6600 4150 6750
+	4150 7150 4150 7300
 $Comp
 L Connector_Generic:Conn_01x01 J9
 U 1 1 5F6BCE58
-P 3800 6600
-F 0 "J9" H 3718 6375 50  0000 C CNN
-F 1 "Conn_01x01" H 3718 6466 50  0000 C CNN
-F 2 "NeofoxxLibs:SolderPad_2x3mm" H 3800 6600 50  0001 C CNN
-F 3 "~" H 3800 6600 50  0001 C CNN
-	1    3800 6600
+P 3800 7150
+F 0 "J9" H 3718 6925 50  0000 C CNN
+F 1 "Conn_01x01" H 3718 7016 50  0000 C CNN
+F 2 "NeofoxxLibs:SolderPad_2x3mm" H 3800 7150 50  0001 C CNN
+F 3 "~" H 3800 7150 50  0001 C CNN
+	1    3800 7150
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4000 6600 4150 6600
+	4000 7150 4150 7150
 $Comp
 L power:GND #PWR0113
 U 1 1 5F6BEE7A
-P 5000 6100
-F 0 "#PWR0113" H 5000 5850 50  0001 C CNN
-F 1 "GND" H 5005 5927 50  0000 C CNN
-F 2 "" H 5000 6100 50  0001 C CNN
-F 3 "" H 5000 6100 50  0001 C CNN
-	1    5000 6100
+P 5000 6650
+F 0 "#PWR0113" H 5000 6400 50  0001 C CNN
+F 1 "GND" H 5005 6477 50  0000 C CNN
+F 2 "" H 5000 6650 50  0001 C CNN
+F 3 "" H 5000 6650 50  0001 C CNN
+	1    5000 6650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 5950 5000 6100
+	5000 6500 5000 6650
 $Comp
 L Connector_Generic:Conn_01x01 J10
 U 1 1 5F6BEE81
-P 4650 5950
-F 0 "J10" H 4568 5725 50  0000 C CNN
-F 1 "Conn_01x01" H 4568 5816 50  0000 C CNN
-F 2 "NeofoxxLibs:SolderPad_2x3mm" H 4650 5950 50  0001 C CNN
-F 3 "~" H 4650 5950 50  0001 C CNN
-	1    4650 5950
+P 4650 6500
+F 0 "J10" H 4568 6275 50  0000 C CNN
+F 1 "Conn_01x01" H 4568 6366 50  0000 C CNN
+F 2 "NeofoxxLibs:SolderPad_2x3mm" H 4650 6500 50  0001 C CNN
+F 3 "~" H 4650 6500 50  0001 C CNN
+	1    4650 6500
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4850 5950 5000 5950
+	4850 6500 5000 6500
 $Comp
 L power:GND #PWR0114
 U 1 1 5F6BEE88
-P 5000 6750
-F 0 "#PWR0114" H 5000 6500 50  0001 C CNN
-F 1 "GND" H 5005 6577 50  0000 C CNN
-F 2 "" H 5000 6750 50  0001 C CNN
-F 3 "" H 5000 6750 50  0001 C CNN
-	1    5000 6750
+P 5000 7300
+F 0 "#PWR0114" H 5000 7050 50  0001 C CNN
+F 1 "GND" H 5005 7127 50  0000 C CNN
+F 2 "" H 5000 7300 50  0001 C CNN
+F 3 "" H 5000 7300 50  0001 C CNN
+	1    5000 7300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 6600 5000 6750
+	5000 7150 5000 7300
 $Comp
 L Connector_Generic:Conn_01x01 J11
 U 1 1 5F6BEE8F
-P 4650 6600
-F 0 "J11" H 4568 6375 50  0000 C CNN
-F 1 "Conn_01x01" H 4568 6466 50  0000 C CNN
-F 2 "NeofoxxLibs:SolderPad_2x3mm" H 4650 6600 50  0001 C CNN
-F 3 "~" H 4650 6600 50  0001 C CNN
-	1    4650 6600
+P 4650 7150
+F 0 "J11" H 4568 6925 50  0000 C CNN
+F 1 "Conn_01x01" H 4568 7016 50  0000 C CNN
+F 2 "NeofoxxLibs:SolderPad_2x3mm" H 4650 7150 50  0001 C CNN
+F 3 "~" H 4650 7150 50  0001 C CNN
+	1    4650 7150
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4850 6600 5000 6600
-Text Notes 3700 5600 0    50   ~ 0
+	4850 7150 5000 7150
+Text Notes 3700 6150 0    50   ~ 0
 Places for soldering to backplate\n(use copper braid, good stability)
 Wire Notes Line
-	3450 5400 5350 5400
+	3450 5950 5350 5950
 Wire Notes Line
-	5350 5400 5350 7050
+	5350 5950 5350 7600
 Wire Notes Line
-	5350 7050 3450 7050
+	5350 7600 3450 7600
 Wire Notes Line
-	3450 7050 3450 5400
+	3450 7600 3450 5950
 $Comp
 L Device:R R8
 U 1 1 5F6D1A0C
@@ -741,7 +741,7 @@ F 3 "~" H 8000 3800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	10100 3250 9700 3250
+	10250 3250 9700 3250
 Wire Wire Line
 	8000 3250 8000 3650
 Wire Wire Line
@@ -852,32 +852,32 @@ Wire Wire Line
 	8700 4550 8700 4450
 Text Label 1600 3650 0    50   ~ 0
 COIL_MODS
-Text Label 10100 3250 2    50   ~ 0
+Text Label 10250 3250 2    50   ~ 0
 COIL_MODS
 $Comp
 L Connector_Generic:Conn_01x01 J15
 U 1 1 5F71DD7F
-P 10450 4450
-F 0 "J15" V 10414 4362 50  0000 R CNN
-F 1 "Conn_01x01" V 10323 4362 50  0000 R CNN
-F 2 "NeofoxxLibs:SolderPad_2x3mm" H 10450 4450 50  0001 C CNN
-F 3 "~" H 10450 4450 50  0001 C CNN
-	1    10450 4450
+P 10550 4800
+F 0 "J15" V 10514 4712 50  0000 R CNN
+F 1 "Conn_01x01" V 10423 4712 50  0000 R CNN
+F 2 "NeofoxxLibs:SolderPad_2x3mm" H 10550 4800 50  0001 C CNN
+F 3 "~" H 10550 4800 50  0001 C CNN
+	1    10550 4800
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0116
 U 1 1 5F720456
-P 10450 4750
-F 0 "#PWR0116" H 10450 4500 50  0001 C CNN
-F 1 "GND" H 10455 4577 50  0000 C CNN
-F 2 "" H 10450 4750 50  0001 C CNN
-F 3 "" H 10450 4750 50  0001 C CNN
-	1    10450 4750
+P 10550 5100
+F 0 "#PWR0116" H 10550 4850 50  0001 C CNN
+F 1 "GND" H 10555 4927 50  0000 C CNN
+F 2 "" H 10550 5100 50  0001 C CNN
+F 3 "" H 10550 5100 50  0001 C CNN
+	1    10550 5100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10450 4750 10450 4650
+	10550 5100 10550 5000
 Text Notes 6400 1800 0    50   ~ 0
 OPAMP TABLE (best to worst)\nTLV2170 - 1.2MHz, 2x125uA, 2.7-36V\nMC33171 - 1.8MHz, 2x180uA, 3.0-44V\nLM358 - 1.0MHz, 2x500uA, 3.0-32V\nTL062 (ST) - 1MHz, 2x200uA, 6.0-36V\nTL062 (TI) - 1MHz, 2x200uA, 10.0-30V (maybe 7.0-30V)
 $Comp
@@ -904,14 +904,34 @@ Connection ~ 4800 3800
 Text Notes 3550 4400 0    50   ~ 0
 Stuff 10-22pF, if problems with oscilating
 $Comp
-L NeofoxxLibs:LOGO MARK1
+L Kicad_Library:LOGO MARK1
 U 1 1 5F7B64C2
-P 1300 6150
-F 0 "MARK1" H 1428 6196 50  0000 L CNN
-F 1 "LOGO" H 1428 6105 50  0000 L CNN
-F 2 "NeofoxxLibs:FOX_LOGO_MASK" H 1300 6150 50  0001 C CNN
-F 3 "" H 1300 6150 50  0001 C CNN
-	1    1300 6150
+P 1300 6700
+F 0 "MARK1" H 1428 6746 50  0000 L CNN
+F 1 "LOGO" H 1428 6655 50  0000 L CNN
+F 2 "NeofoxxLibs:FOX_LOGO_MASK" H 1300 6700 50  0001 C CNN
+F 3 "" H 1300 6700 50  0001 C CNN
+	1    1300 6700
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	7500 4400 7500 2800
+Wire Notes Line
+	7500 2800 6000 2800
+Wire Notes Line
+	6000 2800 6000 4400
+Wire Notes Line
+	6000 4400 7500 4400
+Text Notes 6100 2950 0    50   ~ 0
+Output, to volume control
+Wire Notes Line
+	7750 5450 11150 5450
+Wire Notes Line
+	11150 5450 11150 2400
+Wire Notes Line
+	11150 2400 7750 2400
+Wire Notes Line
+	7750 2400 7750 5450
+Text Notes 850  5500 0    50   ~ 0
+VOICING\nEffect of C3 & C4:\n- lower value == less bass\n- bigger value -> more bass\n\nEffect of (R3+R8) or (R4+R5)\nTotal resistance of (R3+R8) or (R4+R5) is what "loads" the coil.\n-> higher values will produce more "bright" sounds with more highs\n-> lower values will be more dark, even muddy if you go to low.\n--> To start, aim for a value of around 250k.\n--> Values don't have to be the same. Experiment!\n\nTry to balance Total resistance of (R3+R8) and (R4+R5)\nagainst R4&R5 == GAIN.\n\n
 $EndSCHEMATC
